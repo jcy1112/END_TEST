@@ -1,11 +1,11 @@
 <template>
-  <div style="color: #666;font-size: 14px;">
-    <div style="padding-bottom: 20px">
+  <div class="font">
+    <div class="pad">
       <b>您好！{{ user.nickname }}</b>
     </div>
     <el-card>
       欢迎使用本系统
-      <el-divider/>
+      <el-divider />
       兔年大吉
     </el-card>
 
@@ -17,8 +17,18 @@ export default {
   name: "Home",
   data() {
     return {
-      user: localStorage.getItem("user") ? JSON.parse(localStorage.getItem("user")) : {}
+      user: localStorage.getItem("user") ? JSON.parse(localStorage.getItem("user")) : {},
     }
   }
 }
 </script>
+
+<style scoped>
+.font{
+  color: #666;
+  font-size: 14px;
+}
+.pad{
+  padding-bottom: 20px;
+}
+</style>

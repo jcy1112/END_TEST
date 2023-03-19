@@ -1,5 +1,5 @@
 <template>
-  <el-menu :default-openeds="['1', '3']" style="min-height: 100%; overflow-x: hidden"
+  <el-menu :default-openeds="['1', '3']" class="menu"
            background-color="rgb(48, 65, 86)"
            text-color="#fff"
            active-text-color="#ffd04b"
@@ -7,9 +7,9 @@
            :collapse="isCollapse"
            router
   >
-    <div style="height: 60px; line-height: 60px; text-align: center">
-      <img src="../assets/logo.png" alt="" style="width: 20px; position: relative; top: 5px; right: 5px">
-      <b style="color: white" v-show="logoTextShow">后台管理系统</b>
+    <div class="header">
+      <img src="../assets/logo.png" alt="" class="img">
+      <b class="color" v-show="logoTextShow">后台管理系统</b>
     </div>
     <el-menu-item index="/home">
       <template slot="title">
@@ -53,5 +53,22 @@ export default {
 </script>
 
 <style scoped>
-
+.menu{
+  min-height: 100%;
+  overflow-x: hidden;
+}
+.header{
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+}
+.img{
+  width: 20px;
+  position: relative;
+  top: 5px;
+  right: 5px;
+}
+.color{
+  color: white;
+}
 </style>

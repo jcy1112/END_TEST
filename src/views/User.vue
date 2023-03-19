@@ -143,7 +143,7 @@ export default {
           this.$message.success("保存成功")
           this.load()
         } else {
-          this.$message.error("保存失败")
+          this.$message.error(res.msg)
         }
       })
     },
@@ -167,7 +167,7 @@ export default {
           this.$message.success("删除成功")
           this.load()
         } else {
-          this.$message.error("删除失败")
+          this.$message.error(res.msg)
         }
       })
     },
@@ -186,7 +186,7 @@ export default {
           this.$message.success("批量删除成功")
           this.load()
         } else {
-          this.$message.error("批量删除失败")
+          this.$message.error(res.msg)
         }
       })
     },
