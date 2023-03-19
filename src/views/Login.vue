@@ -53,7 +53,7 @@ export default {
                 this.$router.push("/")
               }
             } else {
-              this.$message.error(/*res.date.msg*/"用户名或密码错误")
+              this.$message.error(res.msg)
             }
           })
         }
