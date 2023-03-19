@@ -18,7 +18,7 @@
     </div>
   </div>
 </template>
-<!--sdassdasdasd-->
+<!--sdasasd-->
 <script>
 export default {
   name: "Login",
